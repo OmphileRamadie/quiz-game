@@ -1,0 +1,184 @@
+/*---------------------Container for the Quiz Game---------------------------------------*/
+
+.App {
+  /*Selecting the element with the class App*/
+  display: flex; /*Setting the display*/
+  justify-content: center; /*Aligning the flex items horizontally*/
+  align-items: center; /*Aligning the flex items vertically*/
+  width: 700px; /*Setting the width*/
+  height: 500px; /*Setting the height*/
+  margin: 90px auto; /*Setting the margin*/
+  border: 1px solid gray; /*Setting the border*/
+}
+/*---------------------QuizSection Component----------------------------------------------*/
+
+.quizSection {
+  /*Selecting the element with the class quizSection*/
+  display: flex; /*Setting the display*/
+  flex-direction: column; /*Setting the  flex direction*/
+  justify-content: center; /*Aligning the flex items vertically*/
+  align-items: center; /*Aligning the flex items horizontally*/
+}
+
+.selected {
+  /*Selecting the element with the class selected*/
+  background: linear-gradient(
+    to top,
+    rgb(218, 218, 65),
+    rgb(218, 218, 65)
+  ) !important; /*Setting the background*/
+}
+
+.options {
+  /*Selecting the element with the class options*/
+  padding: 8px; /*Setting the padding*/
+}
+
+.ui {
+  /*Selecting the element with the class ui*/
+  list-style: none; /*Setting the list-style*/
+  width: 80%; /*Setting the width*/
+  text-align: center; /*Aligning the text on the center*/
+}
+
+.question {
+  /*Selecting the element with the class question*/
+  width: 400px; /*Setting the width*/
+  text-align: center; /*Aligning the text on the center*/
+}
+/*---------------------ButtonSection Component--------------------------------------------*/
+
+.buttonSection {
+  /*Selecting the element with the class buttonSection*/
+  display: flex; /*Setting the display*/
+  flex-direction: column; /*Setting the flex direction*/
+  margin-top: 5px; /*Setting the margin top*/
+  text-align: center; /*Aligning the text on the center*/
+}
+.nextBtnContainer {
+  /*Selecting the element with the class nextBtnContainer*/
+  width: 90%; /*Setting the width*/
+  border-bottom: 1px solid gray; /*Setting the border bottom*/
+  margin: 5px; /*Setting the margin*/
+  margin-left: 20px; /*Setting the margin left*/
+  margin-bottom: 10px; /*Setting the margin bottom*/
+  padding: 20px; /*Setting the padding*/
+}
+
+.quitBtnContainer {
+  /*Selecting the element with the class quitBtnContainer*/
+  width: 90%; /*Setting the width*/
+  margin: 5px; /*Setting the margin*/
+  margin-left: 20px; /*Setting the margin left*/
+  padding: 10px; /*Setting the padding*/
+}
+
+.quitBtn,
+.rulesBtn {
+  /*Selecting the elements with the classes quitBtn and rulesBtn*/
+  width: 40%; /*Setting the width*/
+}
+.quitBtn:hover,
+.finishBtn:hover,
+.rulesBtn:hover {
+  /*Selecting the elements with the classes quitBtn and rulesBtn and
+  adding a hover pseudo class to them*/
+  font-size: 15px; /*Setting the font size*/
+}
+
+/*---------------------GameOver Component--------------------------------------------------*/
+
+.gameOver {
+  /*Selecting the element with the class gameOver*/
+  display: flex; /*Setting the display*/
+  flex-direction: column; /*Setting the flex direction*/
+  justify-content: center; /*Aligning the flex items vertically*/
+  align-items: center; /*Aligning the flex items horizontally*/
+}
+
+.answers {
+  /*Selecting the element with the class answers*/
+  display: grid; /*Setting the display*/
+  grid-template-columns: repeat(5, 1fr); /*Setting the grid column template */
+  list-style: none; /*Setting the list-style*/
+  border-top: 1px solid black; /*Setting the border top*/
+  border-bottom: 1px solid black; /*Setting the border bottom*/
+  width: 90%; /*Setting the width*/
+  margin-bottom: 40px; /*Setting the margin bottom*/
+}
+
+.correctAnswers {
+  /*Selecting the element with the class correctAnswers*/
+  width: 80px; /*Setting the width*/
+  margin: 10px; /*Setting the margin*/
+  background-color: khaki; /*Setting the background color*/
+  word-wrap: break-word; /*Setting the word-wrap*/
+  position: relative; /*Setting the position*/
+  right: 48px; /*Position specification from the right*/
+  text-align: center; /*Aligning the items on the center*/
+  border-radius: 5px; /*Setting the border radius*/
+}
+
+.playAgainBtn {
+  /*Selecting the element with the class playAgainBtn*/
+  margin-top: 20px; /*Setting the margin top*/
+  width: 50%; /*Setting the width*/
+}
+
+/*---------------------Play Component------------------------------------------------------*/
+
+.startGame {
+  /*Selecting the element with the class startGame*/
+  height: auto; /*Setting the height*/
+  text-align: center; /*Aligning the items on the center*/
+}
+
+.rulesContainer {
+  /*Selecting the element with the class rulesContainer*/
+  background-color: khaki; /*Setting the background-color*/
+  width: 80%; /*Setting the width*/
+  margin: auto; /*Setting the margin*/
+  padding: 5px; /*Setting the padding*/
+  margin-top: 10px; /*Setting the margin top*/
+  margin-bottom: 10px; /*Setting the margin bottom*/
+  border-radius: 5px; /*Setting the border radius*/
+}
+
+.startGameBtn {
+  /*Selecting the element with the class startGameBtn*/
+  width: 50%; /*Setting the width*/
+  margin-bottom: 10px; /*Setting the margin bottom*/
+}
+
+/*--------------------- GameVerdict Component--------------------------------------------*/
+
+.verdictHeading {
+  /*Selecting the element with the class verdictHeading*/
+  background-color: lightgray; /*Setting the background color*/
+  margin-bottom: 20px; /*Setting the margin bottom*/
+  border-radius: 5px; /*Setting the border radius*/
+  display: flex; /*Setting the display*/
+  justify-content: center; /*Aligning the flex items horizontally*/
+  align-items: center; /*Aligning the flex items vertically*/
+}
+
+/*--------------------- Rules Component-------------------------------------------------*/
+
+.rules {
+  /*Selecting the element with the class rules*/
+  width: 500px; /*Setting the width*/
+  height: auto; /*Setting the height*/
+  background-color: khaki; /*Setting the backgtround color*/
+  text-align: center; /*Aligning the items on the center*/
+  border-radius: 5px; /*Setting the border radius*/
+}
+
+ol {
+  /*Selecting the ordered list element*/
+  text-align: left; /*Aligning the items on the left*/
+}
+
+ol li {
+  /*Selecting the list items of the ordered list*/
+  margin: 10px; /*Setting the margin*/
+}
